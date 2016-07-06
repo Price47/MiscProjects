@@ -1,0 +1,31 @@
+{
+  "name": "Fooda-App",
+  "version": "1.0.0",
+  "description": "For Dano",
+
+  "author": {
+    "name": "Price"
+  },
+  "engines": {
+    "node": ">= 0.6.0",
+    "npm": ">= 1.0.0"
+  },
+  "dependencies": {
+    "angular-upload": "~1.0.13",
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.1",
+    "express": "^3.21.2",
+    "express-session": "^1.13.0",
+    "gridfs": "^1.0.0",
+    "http": "0.0.0",
+    "mongoose": "^4.4.12",
+    "multer": "^1.1.0",
+    "multiparty": "^4.1.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "q": "^1.4.1"
+  },
+  "private": true,
+  "main": "server.js"
+}
+
