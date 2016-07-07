@@ -23,7 +23,9 @@
     "multiparty": "^4.1.2",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
-    "q": "^1.4.1"
+    "q": "^1.4.1",
+    "request":"latest",
+    "cheerio":"latest"
   },
   "private": true,
   "main": "server.js"
