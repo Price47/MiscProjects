@@ -25,7 +25,9 @@
     "passport-local": "^1.0.0",
     "q": "^1.4.1",
     "request":"latest",
-    "cheerio":"latest"
+    "cheerio":"latest",
+    "scrape-js": "latest",
+    "node-jsdom":"latest"
   },
   "private": true,
   "main": "server.js"

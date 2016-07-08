@@ -2,10 +2,11 @@
  * Created by rstoeffel on 7/6/16.
  */
 var express = require('express');
-var fs = require('fs');
 var app = express();
+var fs = require('fs');
 var request = require('request');
-var cheerio = ('cheerio');
+var cheerio = require('cheerio');
+var Q = require('q');
 
 app.use(express.static(__dirname + '/public'));
 

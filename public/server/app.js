@@ -3,7 +3,8 @@
  */
 module.exports = function(app){
 
-    
-    var restaurantService = require("./services/prooda.service.js")(app);
+
+
+    var proodaService = require("./services/prooda.service.js")(app)
 
 };

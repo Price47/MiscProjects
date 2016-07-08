@@ -1,6 +1,4 @@
-/**
- * Created by rstoeffel on 7/6/16.
- */
+
 (function() {
 
         angular
@@ -8,20 +6,27 @@
             .controller("ProodaMainController", ProodaMainController);
 
 
-        function ProodaMainController($scope, ProodaService,$http) {
+        function ProodaMainController($rootScope, $scope,$q, $http) {
 
-            $scope.rez = [
-                {name: "NotReal", location:"nonEYa"},
-                {name:"alsoFake",location:"bizzness"}
-            ];
-            $scope.add = add;
-
-            function add(){
-                $scope.number += 1;
-                console.log($scope.number);
-                ProodaService.addRestaurant()
+            $scope.stories = [];
+            $scope.stories2=[
+                {title:"this",rank:1,points:4,url:"tewt",username:"price",comments:5},
+                {title:"that",rank:2,points:4,url:"tewt",username:"price",comments:5}
                 
-            }
+            ];
+
+            function init(){
+
+                $http.get('/scrape-hacker')
+                    .success(
+                        function(response){
+                            $scope.stories = response;
+                        }
+                    )
+
+
+            }init();
+
         }
 
     }

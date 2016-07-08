@@ -2,29 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Prooda</title>
 </head>
-<body>
+<body style="background-color: #888888;">
 
 
-    <button ng-click="add()">THis is a button</button>
-    Hello {{number}} !
+
+
+    <div class="container-fluid" style="background-color: white">
 
     <table class="table-responsive table-striped" style="width: 100%">
         <thead>
-            <td>Name</td>
-            <td>Location</td>
+            <td class="col-xs-6 col-sm-6 col-md-6">Article Title By Rank</td>
+            <td class="col-xs-6 col-sm-6 col-md-6">Article Link</td>
         </thead>
         <tbody>
-            <tr ng-repeat="r in rez">
-                <td>{{r.name}}</td>
-                <td>{{r.location}}</td>
+            <tr ng-repeat="s in stories"
+                ng-click="link($index)">
+                <td>{{s.rank}}: {{s.title}} ({{s.points}})</td>
+                <td><a href="{{s.url}}">{{s.url}}</a></td>
+
             </tr>
 
 
         </tbody>
 
 
+    </table>
+    </div>
 
 </body>
 </html>

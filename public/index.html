@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="FoodaApp">
 <head>
+    <link href="prooda-style.css" rel="stylesheet"/>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
@@ -8,17 +9,26 @@
     <script src="client/app.js"></script>
     <script src="config.js"></script>
     <script src="client/view/prooda/prooda-main.controller.js"></script>
-    <script src="client/services/proodaService.js"></script>
+    <script src="client/view/prooda/prooda-fooda.controller.js"></script>
+    <script src="client/view/sidebar/sidebar.controller.js"></script>
     <meta charset="UTF-8">
     <title>Fooda App</title>
 
 
 </head>
 <body>
-    <h1>Lad di da</h1>
-    <div class="container-fluid">
+    <div class="navbar navbar-fixed-top">
+        <div class="container-fluid prooda-logo">
+            <strong>PROODA</strong>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-2 sidebar" ng-controller="SidebarController">
+            <ng-include src="'client/view/sidebar/sidebar.view.html'"></ng-include>
+        </div>
+    <div class="container-fluid col-md-10 col-sm-10 col-xs-10">
         <div ng-view></div>
     </div>
-
+    </div>
 </body>
 </html>

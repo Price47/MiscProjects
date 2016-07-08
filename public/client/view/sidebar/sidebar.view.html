@@ -5,14 +5,16 @@
     <title>Title</title>
 </head>
 <body>
-
-<ul class="nav nav-tabs nav-stacked">
-    <li role="tab-group" ng-class="{'active' : $location.url()=='/prooda-main'}">
-        <a href="#">Hacker News</a>
-    </li>
-    <li role="tab-group"><a href="#">Fooda</a></li>
-    <li role="tab-group"><a href="#">Fooda</a></li>
-</ul>
-
+<nav id="sidebar" ng-controller="SidebarController">
+    <div >
+        <ul class="nav nav-tabs nav-stacked">
+            <li role="tab-group" ng-class="{'active' : $location.url() == '#/prooda-main'}">
+                <a href="#/prooda-main">Hacker News</a>
+            </li>
+            <li role="tab-group" ng-class="{'active' : $location.url() == '#/prooda-fooda'}">
+                <a href="#/prooda-fooda">Fooda</a></li>
+        </ul>
+    </div>
+</nav>
 </body>
 </html>

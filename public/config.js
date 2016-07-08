@@ -13,6 +13,10 @@
                 templateUrl:"client/view/prooda/prooda-main.view.html",
                 controller:"ProodaMainController"
             })
+            .when("/prooda-fooda",{ 
+                    templateUrl:"client/view/prooda/prooda-fooda.view.html",
+                    controller:"ProodaFoodaController"
+            })
             .otherwise({
                 redirectTo: "/prooda-main"
             })
