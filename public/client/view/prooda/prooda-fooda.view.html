@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prooda</title>
+</head>
+<body style="background-color: #888888;">
+
+<div class="navbar navbar-fixed-top">
+    <div class="container-fluid prooda-logo">
+        <strong>PROODA</strong>
+    </div>
+</div>
+    <div class="row">
+    <div class="col-md-6 col-sm-6 col-xs-6" style="background-color: lightgrey">
+    <button ng-click="add()">THis is a button</button>
+    Hello {{number}} !
+
+    <table class="table-responsive table-striped" style="width: 100%">
+        <thead>
+            <td>Name</td>
+            <td>Location</td>
+        </thead>
+        <tbody>
+            <tr ng-repeat="r in rez">
+                <td>{{r.name}}</td>
+                <td>{{r.location}}</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    </div>
+
+    <div class="col-md-6 col-sm-6 col-xs-6" style="background-color: lightgray">
+        <table class="table-responsive table-striped" style="width: 100%">
+            <thead>
+            <td>Name</td>
+            <td>Location</td>
+            </thead>
+            <tbody>
+            <tr ng-repeat="r in rez">
+                <td>{{r.title}}</td>
+                <td>{{r.url}}</td>
+            </tr>
+
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+</body>
+</html>
