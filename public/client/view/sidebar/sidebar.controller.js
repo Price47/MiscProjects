@@ -9,8 +9,8 @@
 
     function SidebarController($rootScope,$scope,$route, $location){
         $scope.route = $route;
-        $scope.add = add;
         
+
 
     }
 })();

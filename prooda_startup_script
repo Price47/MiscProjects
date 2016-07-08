@@ -1,0 +1,10 @@
+#!/bin/bash
+#Install dependencies and start server. Save/run in same folder as server files.
+
+echo "Installing Dependencies"
+npm install
+
+echo "Server Started"
+node server.js
+
+
