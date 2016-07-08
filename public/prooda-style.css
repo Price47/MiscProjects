@@ -13,5 +13,13 @@ body{
 
 }
 
-.prooda-sidebar
+.prooda-table > th, td{
+    padding:10px !important;
+}
+
+.sidebar > ul > li > a.active{
+    background-color: red !important;
+}
+
+
 
